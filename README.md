@@ -1,1 +1,1 @@
-Link Demo : https://ratchagreea.github.io/random-quote/
+Link Demo : https://ratchagreea.github.io/002_random-quote/
