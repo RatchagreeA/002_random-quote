@@ -1,6 +1,6 @@
 {
     "homepage": "https://ratchagreea.github.io/002_random-quote/",
-    "name": "random-quote",
+    "name": "002_random-quote",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
