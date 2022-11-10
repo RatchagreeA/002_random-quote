@@ -1,7 +1,7 @@
 # Random Quote Machine
 
 ## Overview
-Random Quote Machine is a web application that generates quotes and allows users to post them on Twitter.
+Random Quote Machine is a web app that generates quotes and allows users to post them on Twitter.
 
 ## Built With
 - Programming languages:
