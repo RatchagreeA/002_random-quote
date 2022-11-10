@@ -24,11 +24,13 @@ function App() {
     };
     useEffect(() => {
         fetchQuotes(quoteUrl);
-        console.log("Current : ", quoteArr);
+    }, []);
+    useEffect(() => {
+        console.log("Current : ", quote);
         return () => {
-            console.log("Prev : ", quoteArr);
+            console.log("Prev : ", quote);
         };
-    }, [quoteArr]);
+    }, [quote]);
     const randomIdx = (Arr) => {
         return Math.floor(Math.random() * Arr.length);
     };
@@ -79,32 +81,4 @@ function App() {
     );
 }
 
-// class App extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             cnt: 0,
-//             hide: false,
-//         };
-//     }
-//     add() {
-//         this.setState({
-//             cnt: this.state.cnt + 1,
-//             hide: !this.state.hide,
-//         });
-//     }
-//     render() {
-//         return (
-//             <div className="App">
-//                 <button className="btn btn-primary" onClick={() => this.add()}>
-//                     {this.state.cnt}
-//                 </button>
-//                 <br />
-//                 <br />
-//                 <br />
-//                 {this.state.hide && <RawData />}
-//             </div>
-//         );
-//     }
-// }
 export default App;
